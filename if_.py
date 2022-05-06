@@ -89,13 +89,13 @@ book = 350
 # else:
 #  print(f"{a} is not a palindrome")
 
-# find the greatest number
-a = 50
-b = 30
-c = 20
-if a > b and a > c:
- print(f"{a} is greater than {b} and {c}")
-elif b > c:
- print(f"{b} is greater than both {a} and {c}")
-else:
- print(f"{c} is greater than {a} and {b}")
+# # find the greatest number
+# a = 50
+# b = 30
+# c = 20
+# if a > b and a > c:
+#  print(f"{a} is greater than {b} and {c}")
+# elif b > c:
+#  print(f"{b} is greater than both {a} and {c}")
+# else:
+#  print(f"{c} is greater than {a} and {b}")
