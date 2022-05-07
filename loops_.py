@@ -66,9 +66,63 @@
 # for i in zip(s1, s):
 #     print(i)
 
-from itertools import zip_longest
-s = "hello"
-s1 = "hello world"
-print(zip_longest)
-for i in zip_longest(s, s1, fillvalue="NO VALUE TO BE DISPLAYED"):
-    print(i)
+# from itertools import zip_longest
+# s = "hello"
+# s1 = "hello world"
+# print(zip_longest)
+# for i in zip_longest(s, s1, fillvalue="NO VALUE TO BE DISPLAYED"):
+#     print(i)
+# data = ["hi", "hello", 10, "12.3", 12, 90, 6.2, 1+2j]
+# for i in data:
+#     if isinstance(i, (int, float)):
+#         print(i)
+#     elif isinstance(i, str):
+#         if i.isalpha():
+#             print("not numeric")
+#         else:
+#             print(i)
+#     else:
+#         print("not numeric")
+
+
+# s = "hello world"
+
+# for i in s:
+#     print(i)
+
+# for i in range(len(s)):
+#     if i % 2 == 0:
+#         print(i)
+#     else:
+#         print(i**2)
+#
+# for i in enumerate(s):
+#     print(i)
+#
+# for i, v in enumerate(s):
+#     print(i, v, sep="--")
+
+d = {"name": "python", "age": 2, "rno": 1}
+# for i in enumerate(d):
+#     print(i)
+#
+# for i in enumerate(d.items()):
+#     print(i)
+
+# for i, (k, v) in enumerate(d.items()):
+#     print(i, k, v, sep="--")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

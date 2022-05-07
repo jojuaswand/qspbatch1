@@ -108,7 +108,7 @@ for i in files:
 out = [i for i in files if i.split(".")[1] == "txt"]
 # print(out)
 
-print(enumerate)
+# print(enumerate)
 s = "hello"
 # print(enumerate(s))
 # print(list(enumerate(s)))
@@ -132,6 +132,125 @@ d = {"name": "python", "age": 2, "rno": 1}
 # for i, v in enumerate(d.items()):
 #     print(i, v, sep="--")
 
-for i, (k, v) in enumerate(d.items()):
-    print(i, k, v, sep="--")
+# for i, (k, v) in enumerate(d.items()):
+#     print(i, k, v, sep="--")
 
+# set comprehension
+
+s = {1, 1, 2, 2, 3, 4, 3}
+s1 = set()
+for i in s:
+    s1.add(i)
+
+# print(s1)
+s2 = {i for i in s}
+# print(s2)
+s3 = set(i for i in s)
+# print(s3)
+
+s = set(range(51))
+s1 = set()
+s2 = set()
+for i in s:
+    if i % 2 == 0:
+        s1.add(i)
+    else:
+        s2.add(i)
+
+# print(s1, s2)
+
+even = set(i for i in s if i % 2 == 0)
+odd = set(i for i in s if i % 2 != 0)
+# print(even)
+# print(odd)
+
+# dict comprehension
+
+# WAP to create key value pair of index and character
+s = "hello world"
+d = {}
+for i, v in enumerate(s):
+    d[i] = v
+
+# print(d)
+
+d1 = {i: v for i, v in enumerate(s)}
+# print(d1)
+
+# WAP to create a dictionary with word and its length pair
+s = "hello im python welcome to easy world"
+words = s.split()
+d = {}
+for i in words:
+    d[i] = len(i)
+
+# print(d)
+d = {i: len(i) for i in words}
+# print(d)
+
+# WAP to create a dictionary with character and its count
+s = "hello world nice to meet you all bye"
+d = {}
+for i in s:
+    d[i] = s.count(i)
+
+# print(d)
+
+d = {i: s.count(i) for i in s}
+# print(d)
+
+# WAP to create a dictionary with word and its count
+s = "python is easy, python is free"
+words = s.split()
+d = {}
+for i in words:
+    # d[i] = words.count(i)
+    d[i] = s.count(i)
+# print(d)
+
+d = {i: s.count(i) for i in words}
+# print(d)
+
+# WAP to create a dictionary with word and its count only if word is of even length/ odd
+s = "python is easy, python is a programming language"
+words = s.split()
+even = {}
+odd = {}
+for i in words:
+    if len(i) % 2 == 0:
+        even[i] = words.count(i)
+    else:
+        odd[i] = words.count(i)
+
+# print(even, odd)
+
+even = {i: words.count(i) for i in words if len(i) % 2 == 0}
+odd = {i: words.count(i) for i in words if len(i) % 2 != 0}
+# print(odd, even)
+
+# WAP dictionary with index and word pair if word is odd length reverse it or else concatinate with itself
+s = "python is a programming language, python is easy"
+words = s.split()
+d = {i: v[::-1] if len(v) % 2 != 0 else v + v for i, v in enumerate(words)}
+# print(d)
+
+# WAP to create word and length pair only if word is starting with a vowel
+s = "python is a language, python programming is easy"
+words = s.split()
+d = {i: len(i) for i in words if i[0] in "aeiouAEIOU"}
+# print(d)
+
+# WAP to create a dictionary with only strings and length
+l = ["hi", 1, "hello", 2.2, "bye", 3 + 3j, (4, 5, 6, "world")]
+d = {i: len(i) for i in l if isinstance(i, str)}
+print(d)
+
+# WAP to flip dictionary key and value
+d1 = {d[i]: i for i in d}
+print(d1)
+
+# WAP to create a dictionary with character and ascii value
+s = "helloworld"
+d = {i: ord(i) for i in s}
+# print(ord)
+# print(d)
