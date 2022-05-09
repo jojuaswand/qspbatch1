@@ -73,6 +73,7 @@ def prime_(num):
 # print(prime_(5))
 # print(prime_(11))
 # print(prime_(6))
+# print(prime_(9))
 
 # WAP to get required elements from a sequence
 def rs_(x, n):
@@ -81,10 +82,10 @@ def rs_(x, n):
 
 s = "hello world"
 l = ["hi", "hello", "world"]
-print(rs_(s, -1))
-print(rs_(s, 0))
-print(rs_(l, 0))
-print(rs_(l, -1))
+# print(rs_(s, -1))
+# print(rs_(s, 0))
+# print(rs_(l, 0))
+# print(rs_(l, -1))
 
 # Fibonocci or not
 def fibo_(num):
@@ -99,5 +100,67 @@ def fibo_(num):
     return f"{num} is not a fibonocci number"
 
 
-print(fibo_(4))
-print(fibo_(5))
+# print(fibo_(4))
+# print(fibo_(5))
+
+
+################################################################
+# print(bool("$"))
+def dt(x):
+    print(type(x))
+
+
+# dt(1)
+# dt(1.1)
+# dt(1-2j)
+# dt(True)
+# dt("")
+# dt([])
+# dt(())
+# dt({})
+# dt(set())
+
+#################################
+l = [11, 1.1, 1+1j, "hello", [1, 2, 3], (2, 4, 6), {24, 45}, {"name": "python"}]
+
+
+def it(x):
+    sum_ = 0
+    for i in x:
+        if isinstance(i, (str, list, tuple, set, dict)):
+            sum_ += len(i)
+    return sum_
+
+
+# print(it(l))
+
+
+def arg(*args, **kwargs):
+    a = len(args)
+    print(len(args), len(kwargs))
+    if a > 5:
+        return f"exceeding 5 number arguements is {a}"
+    return f"not exceeding 5 number arguements is {a}"
+
+
+# print(arg(1, 2, 3, 4, 5, 6, 7, a=7, b=5))
+
+# a = 10
+# name = "python"
+# print(name, "is", a, "years old")
+# print(f"{name} is {a} years old")
+
+#######################################################
+def primes_(num):
+    l = []
+    for i in range(2, num):
+        if i % 2 == 0:
+             pass
+        else:
+            l.append(i)
+    return l
+
+
+# print(primes_(10))
+
+
