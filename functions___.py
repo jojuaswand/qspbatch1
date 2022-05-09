@@ -151,16 +151,20 @@ def arg(*args, **kwargs):
 # print(f"{name} is {a} years old")
 
 #######################################################
+
 def primes_(num):
     l = []
     for i in range(2, num):
         if i % 2 == 0:
              pass
+        elif i % 3 == 0 or i % 5 == 0 or i % 7 == 0 or i % 9 == 0 or i % 11 == 0:
+            pass
         else:
             l.append(i)
     return l
 
 
-# print(primes_(10))
-
-
+print(primes_(15))
+print(primes_(20))
+print(primes_(50))
+print(primes_(200))
