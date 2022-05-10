@@ -156,7 +156,7 @@ def primes_(num):
     l = []
     for i in range(2, num):
         if i % 2 == 0:
-             pass
+            pass
         elif i % 3 == 0 or i % 5 == 0 or i % 7 == 0 or i % 9 == 0 or i % 11 == 0:
             pass
         else:
