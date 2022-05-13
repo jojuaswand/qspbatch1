@@ -56,23 +56,23 @@ so disp is the decorator function which decorates the original function"""
 #
 # # print(add_(4, 6, 7, 8, a=10, b=20))
 # @disp
-# def sub_(*args, **kwargs):
-#     diff = 0
-#     for i in args:
-#         diff = i
-#         if diff == i:
-#             diff = 0 - i
-#         else:
-#             diff -= i
-#     for j in kwargs:
-#         diff -= kwargs[j]
-#     return diff
-#
-#
-# print(sub_(5, 5, 5, a=10, b=20))
-#
+def sub_(*args, **kwargs):
+    diff = 0
+    for i in args:
+        diff = i
+        if diff == i:
+            diff = 0 - i
+        else:
+            diff -= i
+    for j in kwargs:
+        diff -= kwargs[j]
+    return diff
 
-import time
+
+# print(sub_(5, 5, 5, a=10, b=20))
+# print(sub_(a=10,b=20))
+
+# import time
 
 
 # def spam(func):
