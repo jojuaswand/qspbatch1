@@ -95,17 +95,27 @@ path = r"C:\Users\jojua\PycharmProjects\qspb1\names.txt"
 from collections import Counter
 # l = ["hi", "bye", "hi", "hello", "bye", "hello", "world"]
 # print(Counter(l))
-with open(path, "r") as file_:
+# with open(path, "r") as file_:
     # for i in file_:
     #     a = Counter(i)
     # print(a)
     # print(Counter(file_))
     # print(file_.readlines())
-    a = file_.readlines()
-    v = []
-    for i in a:
-        b = i.strip()
-        for j in b.split(","):
-            v.append(j)
-    print(v)
-    print(Counter(v))
+    # a = file_.readlines()
+    # v = []
+    # for i in a:
+    #     b = i.strip()
+    #     for j in b.split(","):
+    #         v.append(j)
+    # print(v)
+    # print(Counter(v))
+
+path = r"C:\Users\jojua\PycharmProjects\qspb1\names.txt"
+with open(path, "r") as file_:
+    a = file_.read()
+    print(a, type(a))
+    from re import *
+    r = search("python", a)
+    print(r)
+
+
