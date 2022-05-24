@@ -111,11 +111,22 @@ from collections import Counter
     # print(Counter(v))
 
 path = r"C:\Users\jojua\PycharmProjects\qspb1\names.txt"
-with open(path, "r") as file_:
-    a = file_.read()
-    print(a, type(a))
-    from re import *
-    r = search("python", a)
-    print(r)
+# with open(path, "r") as file_:
+#     a = file_.read()
+#     print(a, type(a))
+#     from re import *
+#     r = search("python", a)
+#     print(r)
+# from itertools import islice
+# with open(path) as files_:
+#     a = islice(files_, 2, 5)
+#     print(list(a))
+
+from collections import deque
+with open(path) as file_:
+    # a = deque(file_, 5)
+    # print(a)
+    for i in deque(file_, 5):
+        print(i)
 
 
