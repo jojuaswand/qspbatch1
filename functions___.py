@@ -155,16 +155,25 @@ def arg(*args, **kwargs):
 def primes_(num):
     l = []
     for i in range(2, num):
-        if i % 2 == 0:
-            pass
-        elif i % 3 == 0 or i % 5 == 0 or i % 7 == 0 or i % 9 == 0 or i % 11 == 0:
-            pass
+        if i >= 10:
+            if i % 2 == 0:
+                pass
+            elif i % 3 == 0 or i % 5 == 0 or i % 7 == 0 or i % 9 == 0 or i % 11 == 0:
+                pass
+            else:
+                l.append(i)
         else:
-            l.append(i)
+            if i > 3 :
+                if i % 2 == 0 or i % 3 == 0:
+                    pass
+                else:
+                    l.append(i)
+            else:
+                l.append(i)
     return l
 
 
-print(primes_(15))
+# print(primes_(15))
 print(primes_(20))
-print(primes_(50))
-print(primes_(200))
+# print(primes_(50))
+# print(primes_(200))
